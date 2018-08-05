@@ -47,6 +47,18 @@
             background-repeat: none;
         }
     }
+
+    .about-info{
+        grid-template-areas: 
+        'bioimage'
+        'bio'
+        'job-1'
+        'job-3'
+        'job-2';
+
+        grid-template-columns: 1fr;
+        
+    }
 }
 // SmartPhone
 @include mediaSm{
