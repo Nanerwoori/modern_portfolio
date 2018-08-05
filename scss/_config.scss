@@ -27,3 +27,32 @@ $background-opacity : 0.9;
         }
     }
 }
+
+// Media Query Mixins
+@mixin mediaSm {
+    // any css we put in inside of here will apply if the screen is 500 pixels or less 
+    @media screen and (max-width : 500px) {
+
+        //  I am not going to put my css in here 
+        //  i want to be able use this mixin elsewhere 
+        // so all we have do here is to put content
+        @content;
+    }
+}
+@mixin mediaMd {
+    @media screen and (max-width : 768px) {
+        @content;
+    }
+}
+
+@mixin mediaLg {
+    @media screen and (min-width : 769px)and (max-width : 1170px) {
+        @content;
+    }
+}
+
+@mixin mediaXl {
+    @media screen and (min-width : 1171px) {
+        @content;
+    }
+}
