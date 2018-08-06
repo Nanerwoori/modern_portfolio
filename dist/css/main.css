@@ -188,6 +188,21 @@ main {
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
 
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 1.5rem;
+    border-bottom: solid 2px #fff;
+    margin-bottom: 3rem;
+    padding-bottom: 10px;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      border-bottom: solid 2px #eece1a; }
+
 .btn, .btn-dark, .btn-light {
   display: inline-block;
   padding: 0.5rem 1rem;

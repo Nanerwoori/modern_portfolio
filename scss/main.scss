@@ -122,6 +122,27 @@ main {
     }
 }
 
+.boxes {
+    display: flex;
+    flex-wrap : wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top : 1rem;
+
+    div{
+        font-size : 1.5rem;
+        border-bottom : solid 2px #fff;
+        margin-bottom : 3rem;
+        padding-bottom : 10px;
+        @include easeOut;
+
+        &:hover {
+            border-bottom : solid 2px $secondary-color;
+        }
+
+    }
+}
+
 // Button Styles
 .btn {
     display: inline-block;
