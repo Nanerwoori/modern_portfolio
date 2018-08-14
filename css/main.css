@@ -102,17 +102,17 @@ body {
   margin: 0;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/bg.jpg);
+    background: url(../img/bg.jpeg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
       content: '';
       position: absolute;
       top: 0;
-      left: 0;
       width: 100%;
+      left: 0;
       height: 100%;
-      background: rgba(68, 68, 68, 0.9);
+      background: rgba(68, 68, 68, 0.7);
       z-index: -1; }
 
 h1, h2, h3 {
@@ -240,6 +240,7 @@ main {
     align-items: center;
     text-align: center; }
     main .lg-heading {
+      font-size: 4.2rem;
       line-height: 1;
       margin-bottom: 1rem; }
   ul.menu-nav,
@@ -269,7 +270,13 @@ main {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
+  main {
+    padding: 2rem; }
   main#home h1 {
+    font-size: 3rem;
     margin-top: 10vh; }
+  .lg-heading {
+    margin-top: 1rem;
+    font-size: 5rem; }
   .projects {
     grid-template-columns: 1fr; } }
